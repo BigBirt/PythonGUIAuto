@@ -1,0 +1,4 @@
+@devices=android:///
+@pn=com.neusoft.na.navigation
+
+##添加work

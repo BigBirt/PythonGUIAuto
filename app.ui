@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>916</width>
+    <height>538</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>宋体</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="4">
+       <widget class="QPushButton" name="startButton">
+        <property name="text">
+         <string>执行</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="lable_time">
+        <property name="text">
+         <string>                                                                          执行次数</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="linkButton">
+        <property name="text">
+         <string>链接应用</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="lable_tip">
+        <property name="text">
+         <string>当前未导入airtest自动化脚本</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="5">
+       <widget class="QListWidget" name="listWidget">
+        <property name="font">
+         <font>
+          <family>宋体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3" rowspan="2">
+       <widget class="QLineEdit" name="numLine">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>916</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>开始</string>
+    </property>
+    <widget class="QMenu" name="menu_2">
+     <property name="title">
+      <string>连接方式</string>
+     </property>
+     <addaction name="airtest"/>
+     <addaction name="uiautomator"/>
+    </widget>
+    <addaction name="textAction"/>
+    <addaction name="menu_2"/>
+    <addaction name="stopLinkAction"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="textAction">
+   <property name="text">
+    <string>导入脚本文件</string>
+   </property>
+  </action>
+  <action name="airtest">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>airtest</string>
+   </property>
+  </action>
+  <action name="uiautomator">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>uiautomator</string>
+   </property>
+  </action>
+  <action name="stopLinkAction">
+   <property name="text">
+    <string>断开连接</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
