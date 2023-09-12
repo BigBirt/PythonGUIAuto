@@ -1,1 +1,5 @@
-"# PythonGUIAuto" 
+自用自动化的GUI脚本
+1、使用PYQT5搭建
+2、可使用脚本airtest、uiautomator2
+3、脚本编写注释：@开头为定义变量 ##开头为用例标题，脚本代码不需要加开头，脚本文件txt即可
+
