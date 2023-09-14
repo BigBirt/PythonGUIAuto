@@ -58,7 +58,7 @@
       <item row="0" column="1">
        <widget class="QLabel" name="lable_tip">
         <property name="text">
-         <string>当前未导入airtest自动化脚本</string>
+         <string>当前未导入自动化脚本</string>
         </property>
        </widget>
       </item>
@@ -151,7 +151,7 @@
   </action>
   <action name="stopLinkAction">
    <property name="text">
-    <string>断开连接</string>
+    <string>重启程序</string>
    </property>
   </action>
  </widget>
